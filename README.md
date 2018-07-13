@@ -27,6 +27,7 @@ The current list of tools installed are:
 * credhub-cli
 * bbl
 * fly (concourse-cli)
+* pivnet
 * terraform
 * aws-cli
 * gcloud-cli
@@ -35,5 +36,5 @@ The current list of tools installed are:
 
 Need to add the following tools:
 
-* pivnet
 * om
+* azure cli

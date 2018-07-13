@@ -53,6 +53,10 @@ RUN curl -L "https://github.com/cloudfoundry/bosh-bootloader/releases/download/v
 RUN curl -L "https://github.com/concourse/concourse/releases/download/v3.13.0/fly_linux_amd64" > /usr/local/bin/fly \
   && chmod 0755 /usr/local/bin/fly
 
+# Install pivnet
+RUN curl -L "https://github.com/pivotal-cf/pivnet-cli/releases/download/v0.0.51/pivnet-linux-amd64-0.0.51" > /usr/local/bin/pivnet \
+  && chmod 0755 /usr/local/bin/pivnet
+
 # Install terraform
 RUN curl -L https://releases.hashicorp.com/terraform/0.11.7/terraform_0.11.7_linux_amd64.zip > /tmp/terraform.zip \
   && unzip /tmp/terraform.zip terraform -d /usr/local/bin \

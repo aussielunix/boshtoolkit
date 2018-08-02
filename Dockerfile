@@ -38,6 +38,14 @@ RUN apt-get update \
 # Install cf-cli
 RUN curl -L "https://cli.run.pivotal.io/stable?release=linux64-binary&source=github" | tar -zx -C /usr/local/bin
 
+# Install cf-mgmt
+RUN curl -L https://github.com/pivotalservices/cf-mgmt/releases/download/v0.0.91/cf-mgmt-config-linux > /usr/local/bin/cf-mgmt-config \
+  && chmod a+x /usr/local/bin/cf-mgmt-config
+
+# Install cf-mgmt-config
+RUN curl -L https://github.com/pivotalservices/cf-mgmt/releases/download/v0.0.91/cf-mgmt-linux > /usr/local/bin/cf-mgmt \
+  && chmod a+x /usr/local/bin/cf-mgmt
+
 # Install bosh-cli
 RUN curl -L https://s3.amazonaws.com/bosh-cli-artifacts/bosh-cli-2.0.48-linux-amd64 > /usr/local/bin/bosh \
   && chmod a+x /usr/local/bin/bosh

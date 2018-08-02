@@ -31,6 +31,8 @@ The current list of tools installed are:
 * terraform
 * aws-cli
 * gcloud-cli
+* cf-mgmt
+* cf-mgmt-config
 
 ## TODO
 
@@ -38,3 +40,4 @@ Need to add the following tools:
 
 * om
 * azure cli
+* uaac

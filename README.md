@@ -33,6 +33,7 @@ The current list of tools installed are:
 * gcloud-cli
 * cf-mgmt
 * cf-mgmt-config
+* uaac
 
 ## TODO
 
@@ -40,4 +41,3 @@ Need to add the following tools:
 
 * om
 * azure cli
-* uaac

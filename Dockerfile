@@ -35,6 +35,9 @@ RUN apt-get update \
   && groupadd -g 1001 ubuntu \
   && useradd -u 1001 -g 1001 -s /bin/bash -d /home/ubuntu -m --no-log-init -r ubuntu
 
+# Install uaac
+RUN gem install cf-uaac
+
 # Install cf-cli
 RUN curl -L "https://cli.run.pivotal.io/stable?release=linux64-binary&source=github" | tar -zx -C /usr/local/bin
 

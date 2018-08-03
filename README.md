@@ -13,27 +13,27 @@ docker run -it --rm --user $(id -u):$(id -g) -v $(pwd):/workspace aussielunix/cf
 
 The current list of tools installed are:
 
+* aws-cli
+* bbl
+* bosh-cli
+* cf-cli
+* cf-mgmt
+* cf-mgmt-config
+* credhub-cli
+* curl
 * direnv
+* fly (concourse-cli)
+* gcloud-cli
 * git
 * jq
+* pivnet
 * pwgen
 * python
 * ruby
+* terraform
+* uaac
 * vim
 * wget
-* curl
-* cf-cli
-* bosh-cli
-* credhub-cli
-* bbl
-* fly (concourse-cli)
-* pivnet
-* terraform
-* aws-cli
-* gcloud-cli
-* cf-mgmt
-* cf-mgmt-config
-* uaac
 
 ## TODO
 

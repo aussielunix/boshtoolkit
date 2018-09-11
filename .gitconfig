@@ -1,0 +1,16 @@
+[user]
+  name = Jon Doe
+  email = jon@example.com
+
+[color]
+  ui = true
+
+[alias]
+  lgf = "log --name-only"
+  st = "status"
+  co = "commit"
+  com = "commit -m"
+  l1 = "log --pretty=oneline --abbrev-commit"
+
+[push]
+	default = simple
